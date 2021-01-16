@@ -40,14 +40,14 @@ function App() {
       <Router>
         <ScrollToTop>
           <Switch>
-            <Route exact path="/"  component={Home}/>
-            <Route path="/about"  component={About}/>
-            <Route exact path="/shop"  component={Shop}/>
-            <Route  path="/shop/product/:id" component={ProductDetail}/>
-            <Route exact path="/donate"  component={Donate}/>
-            <Route path="/donate/:id" component={ProductDetail}/>
-            <Route path="/contact"  component={Contact}/>
-            <Route path="/alert/how-were-responding-to-covid-19"  component={ReadOurStatement} />
+            <Route exact path={`/`}  component={Home}/>
+            <Route path={`/about`}  component={About}/>
+            <Route exact path={`/shop`}  component={Shop}/>
+            <Route  path={`/shop/product/:id`} component={ProductDetail}/>
+            <Route exact path={`/donate`}  component={Donate}/>
+            <Route path={`/donate/:id`} component={ProductDetail}/>
+            <Route path={`/contact`}  component={Contact}/>
+            <Route path={`/alert/how-were-responding-to-covid-19`}  component={ReadOurStatement} />
             <Route render = {()=><h1>400 ERROR</h1>} />
           </Switch>
         </ScrollToTop>
