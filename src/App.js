@@ -48,7 +48,7 @@ function App() {
             <Route path="/donate/:id" component={ProductDetail}/>
             <Route path="/contact"  component={Contact}/>
             <Route path="/alert/how-were-responding-to-covid-19"  component={ReadOurStatement} />
-            <Route render = {()=><h1>404 ERROR</h1>} />
+            {/* <Route render = {()=><h1>404 ERROR</h1>} /> */}
           </Switch>
         </ScrollToTop>
       </Router>
