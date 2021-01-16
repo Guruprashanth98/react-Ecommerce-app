@@ -1,0 +1,51 @@
+.DonateContent {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.DonateContainer {
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.DonateWrapper {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 30px 10px;
+  border: 2px solid #222;
+  border-radius: 5px;
+}
+.Link {
+  text-decoration: none;
+}
+.DonateText {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #eb5757;
+  transition: background-color 300ms ease;
+  color: #f9f9f9;
+  text-align: center;
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+  color: #f9f9f9;
+  font-size: 22px;
+  font-weight: 700;
+}
+.DonateText:hover {
+  background-color: #222;
+}
+@media screen and (max-width: 767px) {
+  .DonateWrapper {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 478px) {
+  .DonateWrapper {
+    width: 80%;
+  }
+}

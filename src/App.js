@@ -1,23 +1,58 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import {useDispatch} from 'react-redux'
+import Home from './Page-components/Home/Home'
+import About from './Page-components/About/About'
+import Shop from './Page-components/Shop/Shop'
+import Donate from './Page-components/Donate/Donate'
+import Contact from './Page-components/Contact/Contact'
+import Cart from './Page-components/components/Cart'
+import {useEffect} from 'react'
+import {addProduct} from './Action/action'
+import ProductDetail from './Page-components/Shop/ProductDetail';
+import { withRouter, useLocation } from "react-router-dom";
+import ReadOurStatement from './Page-components/Home/ReadOurStatement'
+
+function _ScrollToTop(props) {
+  const { pathname } = useLocation();
+  useEffect(() => {
+      window.scrollTo(0, 0);
+  }, [pathname]);
+  return props.children
+}
+
+const  ScrollToTop = withRouter(_ScrollToTop)
+
+
+  
+
 
 function App() {
+  let dispatch = useDispatch()
+  
+  useEffect(() =>{
+    dispatch(addProduct())
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Cart  />
+      <Router>
+        <ScrollToTop>
+          <Switch>
+            <Route path="/" exact component={Home}/>
+            <Route path="/about"  component={About}/>
+            <Route exact path="/shop"  component={Shop}/>
+            <Route  path="/shop/product/:id" component={ProductDetail}/>
+            <Route exact path="/donate"  component={Donate}/>
+            <Route path="/donate/:id" component={ProductDetail}/>
+            <Route path="/contact"  component={Contact}/>
+            <Route path="/alert/how-were-responding-to-covid-19"  component={ReadOurStatement} />
+            <Route render = {()=><h1>404 ERROR</h1>} />
+            
+          </Switch>
+        </ScrollToTop>
+      </Router>
     </div>
   );
 }

@@ -1,0 +1,171 @@
+.SupportSection {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.Container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.TopWrapper {
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.Left {
+  display: flex;
+  flex-direction: column;
+}
+.LeftHead {
+  text-transform: uppercase;
+}
+.LeftText {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  line-height: 1.2;
+}
+.Right {
+  width: 45%;
+}
+.Right p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.SupportWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.SupportColumn {
+  width: 30%;
+  min-height: 200px;
+}
+.SupportCard {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  min-height: 350px;
+  margin-bottom: 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #222;
+}
+.CardNumber {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  right: auto;
+  bottom: auto;
+  color: #f9f9f9;
+  font-size: 40px;
+  font-weight: 700;
+}
+.CardText {
+  color: #f9f9f9;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.SupportCard img {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: -25%;
+  bottom: -25%;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+.SupportCard p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.ProductListHome {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.Container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.TopWrapper {
+  display: flex;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+.ShopProducts {
+  display: flex;
+  flex-direction: column;
+}
+.Text {
+  text-transform: uppercase;
+}
+.TextMeta {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.ViewMore {
+  display: flex;
+  justify-content: center;
+}
+.ViewMore button {
+  border-color: #222;
+  background-color: #222;
+  padding: 10px 25px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  transition: border-color 300ms ease, background-color 300ms ease;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+}
+.ViewMore button:hover {
+  border-color: #eb5757;
+  background-color: #eb5757;
+}
+@media screen and (max-width: 991px) {
+  .Left {
+    width: 40%;
+  }
+  .Right {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .TopWrapper {
+    flex-direction: column;
+  }
+  .Left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .Right {
+    width: 100%;
+  }
+  .SupportWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .SupportColumn {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 478px) {
+  .SupportColumn {
+    width: 100%;
+  }
+}

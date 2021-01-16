@@ -1,0 +1,27 @@
+.ReadContent {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.ReadContainer {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.ReadWrapper h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.ReadWrapper p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.ReadWrapper h4 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 10px;
+}

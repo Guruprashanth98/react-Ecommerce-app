@@ -1,0 +1,210 @@
+.ContactCard {
+  display: flex;
+  width: 100%;
+  z-index: 2;
+}
+.Contact {
+  display: flex;
+  width: 25%;
+  min-height: 300px;
+  margin-top: 25px;
+  margin-right: 20px;
+  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #222;
+  text-align: center;
+}
+.Contact img {
+  margin-bottom: 30px;
+}
+.Contact h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.Contact p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.Contact button {
+  padding: 8px 28px;
+  border-style: solid;
+  color: #fff;
+  border-width: 1px;
+  border-color: #eb5757;
+  border-radius: 5px;
+  background-color: #eb5757;
+  transition: border-color 300ms ease, background-color 300ms ease;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+.Contact button:hover {
+  border-color: #222;
+  background-color: #222;
+}
+.ContactImage {
+  width: 45%;
+  height: 550px;
+  background-image: linear-gradient(90deg, #222, rgba(34, 34, 34, 0.18) 76%),
+    url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e84f1e1f02ef1408ff221cc_vinicius-amano-4mK2KVuYrDs-unsplash%20(1)%20(1).jpg");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+  background-repeat: repeat, no-repeat;
+  position: absolute;
+  right: 0;
+  z-index: 0;
+}
+.ContactForm {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.ContactContainer {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.ContactWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.ContactLeft {
+  width: 30%;
+}
+.ContactLeft h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.ContactDetails p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.ContactRight {
+  width: 70%;
+  padding-left: 20px;
+}
+.ContactRight h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.ContactRight p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.FormDiv {
+  margin: 0 0 15px;
+}
+.FormDiv label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 400;
+}
+.FormInput {
+  border: 1px solid #222;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  vertical-align: middle;
+  background-color: #ffffff;
+}
+.FormInput textarea {
+  height: auto;
+}
+.SubmitBtn {
+  margin-top: 10px;
+  padding: 8px 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #eb5757;
+  border-radius: 5px;
+  background-color: #eb5757;
+  transition: border-color 300ms ease, background-color 300ms ease;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+}
+.SubmitBtn:hover {
+  border-color: #222;
+  background-color: #222;
+}
+.SuccessWrapper {
+  min-height: 280px;
+  padding-top: 125px;
+  border-radius: 5px;
+  background-color: #20c788;
+  color: #f9f9f9;
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+.SuccessWrapper div {
+  color: #f9f9f9;
+}
+@media screen and (max-width: 991px) {
+  .ContactForm {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .ContactWrapper {
+    flex-direction: column;
+  }
+  .ContactLeft {
+    width: 100%;
+  }
+  .ContactDetails p {
+    margin-bottom: 0;
+  }
+  .ContactRight {
+    width: 97%;
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ContactImage {
+    width: 100%;
+    margin-top: 150px;
+  }
+  .ContactCard {
+    margin-top: 580px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .Contact {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 478px) {
+  .Contact {
+    width: 100%;
+  }
+  .ContactCard {
+    flex-wrap: wrap;
+  }
+  .ContactForm {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .ContactRight {
+    width: 94%;
+  }
+}

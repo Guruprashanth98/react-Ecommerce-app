@@ -1,0 +1,178 @@
+header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #eb5757;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 75px;
+  box-sizing: border-box;
+}
+.Container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.NavWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Link {
+  position: relative;
+  float: left;
+  text-decoration: none;
+  color: #333333;
+  text-decoration: none;
+}
+.NavLink {
+  border-radius: 5px;
+  padding: 4px 10px;
+}
+.NavLink:hover {
+  background-color: #000;
+}
+.Link > img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+.RightNav {
+  display: flex;
+  align-items: center;
+}
+.RightNav i {
+  display: none;
+}
+.NavMenu {
+  position: relative;
+  float: right;
+}
+.Link2 {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  transition: all 300ms ease;
+  color: #f9f9f9;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  text-align: left;
+  font-size: 15px;
+}
+.Cart {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+}
+.Cart img {
+  width: 40px;
+}
+.Cart span {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 900;
+}
+.NavBar {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: #eb5757;
+  transform: translateX(100%);
+  transition: transform 300ms ease;
+}
+.NavBarContainer {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 140px;
+}
+.NavMenuDisplay {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+.NavMenuLink2 {
+  margin: 0 auto;
+  width: 98%;
+  padding: 4px 10px;
+  border-radius: 5px;
+  transition: all 300ms ease;
+  color: #f9f9f9;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+}
+.NavBar i {
+  position: absolute;
+  top: 30px;
+  right: 15px;
+}
+
+.active {
+  transform: translateX(0);
+}
+@media screen and (max-width: 991px) {
+  .NavMenu {
+    display: none;
+  }
+  header {
+    width: 100%;
+  }
+  .RightNav i {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px 0 20px;
+    cursor: pointer;
+    padding-bottom: 5px;
+  }
+  .NavBar {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .RightNav i {
+    font-size: 18px;
+  }
+  .Cart img {
+    width: 35px;
+  }
+}
+@media screen and (max-width: 478px) {
+  .RightNav i {
+    font-size: 15px;
+  }
+  .Cart img {
+    width: 30px;
+  }
+  .Cart span {
+    top: -3px;
+    right: -5px;
+  }
+}

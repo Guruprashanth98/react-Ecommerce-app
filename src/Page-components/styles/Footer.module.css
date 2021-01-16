@@ -1,0 +1,34 @@
+.Footer {
+  padding-top: 65px;
+  padding-bottom: 40px;
+  background-color: #222;
+}
+.Container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.Wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.LogoWrapper {
+}
+.Link {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.SocialLink {
+  margin-left: 20px;
+  display: inline-block;
+}
+.SocialLink img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 20px;
+}

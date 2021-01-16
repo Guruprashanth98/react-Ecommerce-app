@@ -1,0 +1,183 @@
+.Banner {
+  min-height: 550px;
+  background-image: linear-gradient(
+      360deg,
+      rgb(34, 34, 34),
+      rgba(34, 34, 34, 0)
+    ),
+    url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83f98bae1ad80129fcd7e5_wu-jianxiong-UniC8xhlzaE-unsplash.jpg");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+.SecondaryBanner {
+  min-height: 550px;
+  background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.17), #222),
+    url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e83fb3a6948e1f05b20527f_nathan-dumlao-pLoMDKtl-JY-unsplash.jpg");
+  background-position: 0px 0px, 50% 50%;
+  background-size: auto, cover;
+}
+.SecondaryBanner .Container {
+  align-items: flex-end;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.SecondaryBanner .Heading,
+.SecondaryBanner .Paragraph,
+.SecondaryBanner .ButtonWrapper {
+  text-align: right;
+}
+.SecondaryBanner .ButtonWrapper button {
+  background-color: #fff;
+  color: #000;
+}
+.SecondaryBanner .ButtonWrapper button:hover {
+  background-color: #eb5757;
+  color: #fff;
+  border-color: #eb5757;
+}
+.SecondaryBanner .Heading {
+  font-size: 40px;
+  width: 50%;
+  /* white-space: nowrap; */
+}
+.BackgroundChange {
+  background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.17), #222),
+    url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e840df8e2c9cc7677e4f00e_felix-rostig-UmV2wr-Vbq8-unsplash.jpg");
+}
+.NeedHelpBanner {
+  background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.17), #222),
+    url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e84f74f40a146d432ac3598_adam-solomon-WHUDOzd5IYU-unsplash%20(1)%20(1).jpg");
+}
+.ShopBanner {
+  background-image: none;
+  background-color: #000;
+  min-height: 0;
+}
+.ShopBanner .Container {
+  min-height: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.ShopBanner .Heading {
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.DonateBanner {
+  background-image: linear-gradient(180deg, rgba(34, 34, 34, 0.56), #222),
+    url("https://assets.website-files.com/5e7ff3ec0c4ef4c974fa99e3/5e85758a28ae07433140f0cb_jed-villejo-bEcC0nyIp2g-unsplash%20(1)%20(1).jpg");
+  padding-bottom: 35px;
+  background-position: 0px 0px, 50% 25%;
+  box-sizing: border-box;
+}
+.DonateBanner .Container {
+  align-items: center;
+  max-width: 1200px;
+}
+.DonateBanner .Heading {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 38px;
+  font-weight: 800;
+  text-align: center;
+}
+.DonateBanner span {
+  font-size: 30px;
+  text-align: center;
+  font-weight: normal;
+}
+.DonateBanner p {
+  width: 65%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.ContactBanner {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #222;
+  color: #f9f9f9;
+  background-image: none;
+}
+.ContactBanner .Container {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 1200px;
+}
+.ContactBanner .Heading {
+  margin-top: 55px;
+  width: 100%;
+  font-size: 35px;
+}
+.Container {
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  min-height: 550px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.Heading {
+  width: 50%;
+  color: rgb(249, 249, 249);
+  font-size: 62px;
+  line-height: 1.2;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.Paragraph {
+  width: 35%;
+  margin-bottom: 25px;
+  color: rgb(249, 249, 249);
+  font-size: 18px;
+}
+
+.ButtonWrapper button {
+  color: rgb(249, 249, 249);
+  background-color: transparent;
+  border-color: rgb(249, 249, 249);
+  padding: 10px 25px;
+  border-style: solid;
+  border-width: 1px;
+  transition: border-color 300ms ease 0s, background-color 300ms ease 0s;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.ButtonWrapper button:hover {
+  border-color: rgb(249, 249, 249);
+  background-color: rgb(249, 249, 249);
+  color: rgb(34, 34, 34);
+}
+@media screen and (max-width: 991px) {
+  .Banner .Container {
+    padding-left: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .Banner .Heading {
+    font-size: 45px;
+    width: 100%;
+  }
+  .Paragraph {
+    font-size: 15px;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 478px) {
+  .Banner .Heading {
+    font-size: 35px;
+    width: 100%;
+  }
+  .Paragraph {
+    font-size: 12px;
+    width: 80%;
+  }
+}

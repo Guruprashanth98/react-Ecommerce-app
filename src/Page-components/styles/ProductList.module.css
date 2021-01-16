@@ -1,0 +1,113 @@
+.ProductList {
+  width: 80%;
+}
+.ProductListWrapper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  justify-content: center;
+}
+.ProductListItem {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ProductImage {
+  width: 100%;
+  height: 400px;
+}
+.ProductImage img {
+  width: 100%;
+  height: 100%;
+}
+.ProductDetails {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.ProductDetails h3 {
+  color: #222;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 0;
+}
+.ProductDetails p {
+  margin-right: 10px;
+  color: #222;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: left;
+}
+.ProductDetailsBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  width: 100%;
+}
+.ProductDetailsBtn button {
+  padding: 8px 28px;
+  border-style: solid;
+  color: #fff;
+  border-width: 1px;
+  border-color: #eb5757;
+  border-radius: 5px;
+  background-color: #eb5757;
+  transition: border-color 300ms ease, background-color 300ms ease;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+.ProductDetailsBtn button:hover {
+  border-color: #222;
+  background-color: #222;
+}
+.ForHome {
+  width: 100%;
+}
+.ForHome .ProductListWrapper {
+  display: flex;
+}
+.ForHome .ProductListItem {
+  width: 25%;
+}
+.ForHome .ProductImage {
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .ForHome .ProductListWrapper {
+    flex-wrap: wrap;
+    grid-gap: 20px;
+  }
+  .ForHome .ProductListItem {
+    width: 35%;
+  }
+  .ProductList {
+    width: 100%;
+  }
+  .ProductListWrapper {
+    grid-template-columns: auto auto;
+    grid-gap: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ForHome .ProductListItem {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 478px) {
+  .ForHome .ProductListItem {
+    width: 80%;
+  }
+  .ProductListWrapper {
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}

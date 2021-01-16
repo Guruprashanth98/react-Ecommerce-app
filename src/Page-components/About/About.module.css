@@ -1,0 +1,125 @@
+.WhyAcmeSection {
+  padding-top: 65px;
+}
+.Container {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.Wrapper {
+  display: flex;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  flex-direction: column;
+  align-items: center;
+}
+.SmallText {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.Heading {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+.Parah {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.ContentSection {
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
+.ContentContainer {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.ContentWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.AboutColumn {
+  width: 22%;
+}
+.AboutImage {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.AboutColumn h3 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.AboutColumn p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.ProfileWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.OwnerBio {
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  align-items: center;
+}
+.OwnerAvatar {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.OwnerAvatar img {
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+.OwnerBio h3 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+.OwnerParah {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .ContentWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .AboutColumn {
+    width: 80%;
+    text-align: center;
+  }
+  .ProfileWrapper {
+    flex-direction: column;
+  }
+  .OwnerBio {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 478px) {
+  .AboutColumn {
+    width: 100%;
+    text-align: center;
+  }
+  .Wrapper {
+    width: 100%;
+  }
+}
