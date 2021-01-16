@@ -40,7 +40,7 @@ function App() {
       <Router>
         <ScrollToTop>
           <Switch>
-            <Route path="/" exact component={Home}/>
+            <Route exact path="/"  component={Home}/>
             <Route path="/about"  component={About}/>
             <Route exact path="/shop"  component={Shop}/>
             <Route  path="/shop/product/:id" component={ProductDetail}/>
@@ -49,7 +49,6 @@ function App() {
             <Route path="/contact"  component={Contact}/>
             <Route path="/alert/how-were-responding-to-covid-19"  component={ReadOurStatement} />
             <Route render = {()=><h1>404 ERROR</h1>} />
-            
           </Switch>
         </ScrollToTop>
       </Router>
