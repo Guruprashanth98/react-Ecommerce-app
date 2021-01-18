@@ -7,6 +7,7 @@ import style from './Home.module.css'
 import ProductList from '../components/ProductList'
 import {Link} from 'react-router-dom'
 
+//props for different common components
 const bannerProps = {
     heading: <>Serving you <br/> since 1989.</>,
     parah: "Acme Outdoors is an outdoor and adventure shop located in the Boathouse District in Oklahoma City.",

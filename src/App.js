@@ -23,9 +23,9 @@ function _ScrollToTop(props) {
 
 const  ScrollToTop = withRouter(_ScrollToTop)
 
-
+//Folders are structured as Page components  and common components, reduces, actions, store
+//common components are used accross multiple pages
   
-
 
 function App() {
   let dispatch = useDispatch()

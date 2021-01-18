@@ -11,6 +11,7 @@ const ProductDisplay =React.memo(() =>{
     const [onlyAccessories,setOnlyAccessories] = useState(false)
     const [all, setAll] = useState(true)
 
+    //Filter functionality using Hooks state
     const toggle= (event) =>{
         setOnlyClothes(false)
         setOnlyAccessories(false)

@@ -3,6 +3,7 @@ import style from '../styles/ProductList.module.css'
 import {useSelector} from 'react-redux'
 import {Link} from 'react-router-dom'
 
+//using react.memo as a subsititute for shouldcomponent update lifecycle method
 const ProductListGenerator = React.memo(({data}) =>{
     return (
         <div className={style.ProductListItem}>
@@ -33,7 +34,7 @@ const ProductList = React.memo((props) =>{
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min) + min)
     }
-
+    //displaying 3 random  products from the productlist data and rendering it for the home page
     const index = []
     index.push(forHomeComponent &&  getRandomInt(0,3))
     index.push(forHomeComponent && getRandomInt(3,6))

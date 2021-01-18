@@ -26,12 +26,14 @@ const ProductDetailDisplay = React.memo(({item}) => {
         const itemFromCart  = cart?.find(product => product.id  === item.id )
         itemFromCart ? dispatch(updateCart(item,inputCount)) : dispatch(addToCart(item,inputCount))
     }
+    //lifycycle method to laod response from API request being called in the middleware
     useEffect(()=>{
         setPreviewImg(preview)
         photos && setActiveObject(photos[0])
         // eslint-disable-next-line react-hooks/exhaustive-deps
      },[item])
 
+     //toggle events for state 
     const toggleActiveObject = (item,index) =>{
         changePreview(item)
         setActiveObject(photos[index])
@@ -84,7 +86,7 @@ const ProductDetailDisplay = React.memo(({item}) => {
 const ProductDetail = ({match}) => {
     const {id}  = match.params
     const idType  = isNaN(Number(id)) ? "donationID"  : "productID"
-
+    //checking for the id thats being passed in the url if it is a call to product or donation
     const [item, setItem] = useState({
         photos: []
     }) 
@@ -93,7 +95,7 @@ const ProductDetail = ({match}) => {
         const tempItem = donateObjData.find(item => item.price === parseInt(id.split('-').[1]))
         setItem(tempItem)
     }
-
+    //fetching the data array based on from where this child component is being called(either  from shop page to display products or from donate page to display dontations)
     useEffect(()=>{
         idType === "productID" && fetchItem()
         idType === "donationID" && fetchDonateItem()

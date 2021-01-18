@@ -1,3 +1,4 @@
+//object array for donate page
 export  const donateObjData = [
     {
         id: "d-100",

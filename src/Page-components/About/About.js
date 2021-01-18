@@ -5,6 +5,7 @@ import ImageCard from '../components/ImageCard'
 import Footer from '../components/Footer'
 import style  from './About.module.css'
 
+//props for different common components
 const bannerProps = {
     heading: <>Your Adventure <br/> Awaits</>,
     parah: "Acme Outdoors has everything you need to help you get started today. Check out our wonderful collection of gear that will make your next adventure complete.",

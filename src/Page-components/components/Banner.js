@@ -2,7 +2,7 @@ import React from 'react';
 import style from '../styles/Banner.module.css'
 import {Link} from 'react-router-dom'
 
-
+//rendering different buttons for different page components based on the parent component's props
 const Banner = ({data,className,children,forAbout,forHome}) => {
     let {heading, parah, button} = data
     const class1= style[className] ? style[className] : ""

@@ -14,7 +14,7 @@ const TopBar = () => {
     const toggleNavBar = () =>{
         setNavBar(!navBar)
     }
-
+    //switching navbar using states
     const Hamburguer = () =>{
         return (<i className="fas fa-bars" onClick={toggleNavBar}></i>)
     }
@@ -47,7 +47,7 @@ const TopBar = () => {
 }
  
 export default TopBar;
-
+//Nav bar for screens less than 767px 
 const NavBar = ({children,toggle,className}) =>{
     const class1= style[className]
     return (

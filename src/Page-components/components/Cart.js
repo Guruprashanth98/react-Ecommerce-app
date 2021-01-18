@@ -8,10 +8,10 @@ import { replaceCart,deleteCart } from '../../Action/action';
 
 
 const Cart = ({className}) => {
-    const class1= style[className] ? style[className] : ""
+    const class1= style[className] ? style[className] : "" // adding styles based on parent components props
     let cartDisplay = useSelector(state => state.cartDisplay)
     let cartProducts = useSelector(state => state.cartProducts)
-    let total = cartProducts.reduce((acc, item) => acc = (item.price*item.count) + acc ,0)
+    let total = cartProducts.reduce((acc, item) => acc = (item.price*item.count) + acc ,0)//calculating total price by subscribing to store
     let dispatch = useDispatch()
     const [checkoutClick,setCheckoutClick] = useState(false)
     let stylePropCart = {}
@@ -21,7 +21,7 @@ const Cart = ({className}) => {
         dispatch(toggleCartDisplay())
         setCheckoutClick(false)
     }
-    
+    //Used CSS Transition  to transition cart effects, or the cart component dies before the transition's over
     return ( 
         <CSSTransition in = {cartDisplay} timeout={500} unmountOnExit classNames={{
             enter: style["transition-enter"],

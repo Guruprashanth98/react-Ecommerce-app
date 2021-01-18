@@ -90,16 +90,16 @@ const FormElement = (props) => {
         }
         axios.post("https://5d76bf96515d1a0014085cf9.mockapi.io/order",data)
         .then((response) =>{
-            props.item(true)
+            props.item(true) //showing success message
         })
         .catch((e) =>{
             console.log(e)
-            props.item(true)
+            props.item(true) //showing success message even if  the  post fails(because shoplane's api-endpoint's post method often fails)
         })
         setSubmitBtnValue("Please Wait...")
     }
 
-
+    //creating references for DOM nodes to access form elements
     const name  = React.createRef()
     const email = React.createRef()
     const message = React.createRef()
